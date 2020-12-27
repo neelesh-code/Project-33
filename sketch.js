@@ -111,9 +111,9 @@ function draw() {
      divisions[k].display();
    }
 
-   if(particle!==null){
+   if(particle!=null){
      particle.display();
-     if(particle.body.position.u>760){
+     if(particle.body.position.y>760){
        if(particle.body.position.x<160){
          score=score+1000;
          particle=null;
@@ -124,9 +124,9 @@ function draw() {
      }
    }
 
-   if(particle!==null){
+   if(particle!=null){
     particle.display();
-    if(particle.body.position.u>760){
+    if(particle.body.position.y>760){
       if(particle.body.position.x>160 && particle.body.position.x>640){
         score=score+500;
         particle=null;
@@ -137,9 +137,9 @@ function draw() {
     }
   }
 
-  if(particle!==null){
+  if(particle!=null){
     particle.display();
-    if(particle.body.position.u>760){
+    if(particle.body.position.y>760){
       if(particle.body.position.x>640){
         score=score+500;
         particle=null;
